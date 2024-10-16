@@ -1,0 +1,9 @@
+body{
+    font-family:'Montserrat',sans-serif;
+    background-color:#f1f0eb
+    display: flex;
+    justify-content: center;
+    align-tems: center;
+    height: 100vh;
+    margin:0;
+}
