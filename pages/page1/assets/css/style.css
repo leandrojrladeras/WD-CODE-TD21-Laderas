@@ -1,9 +1,85 @@
 body{
     font-family:'Montserrat',sans-serif;
-    background-color:#f1f0eb
+    background-color:#f1f0eb;
     display: flex;
     justify-content: center;
     align-tems: center;
     height: 100vh;
     margin:0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color:#f1f0eb ;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+}
+.left-section {
+    border-right: 2px solid #ccc;
+}
+.left-section h2, .right-section h2 {
+    font-size: 2em;
+color: #303186;
+}
+.left-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.left-section ul li {
+    font-size: 1.2em;
+    color: #ff7f11;
+    margin: 10px 0;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-icon {
+    width: 150px;
+    height: 200px;
+    background-color: #d4a373;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.portfolio-icon::before {
+    content: "Click Me!";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #303186;
+    color: #f1f0eb;
+padding: 5px 10px;
+    border-radius: 5px;
+}
+.portfolio-icon::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: #ff7f11;
+    border-radius: 5px;
 }
