@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Reality Check';
+    src: url('/WD-CODE-TD21-Laderas-main/assets/fonts/Reality Check II DEMO.otf') format('truetype');
+}
+.image-container {
+    align-content: center;
+    position:fixed;
+    width: 100%;
+    max-width: auto;
+}
+.image-container img {
+    align-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Reality Check', sans-serif;
+    background-color: #f1f0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+}
+.overlay-left-section, .overlay-right-section {
+    flex: 1;
+    padding: 50px;
+}
+.overlay-left-section h2, .right-section h2 {
+    font-size: 2em;
+    color: #303186;
+}
+.overlay-left-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.overlay-left-section ul li {
+    font-size: 1.2em;
+    color: #ff7f11;
+    margin: 10px 0;
+}
+.overlay-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-portfolio-icon {
+    width: 200px;
+    height: 250px;
+    background-color: #d4a373;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: -375px;
+    margin-top: 125px;
+}
+.Click Me!-button {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff8800;
+    color: #f1f0eb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
